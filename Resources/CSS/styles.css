@@ -3,6 +3,12 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    background-color: #ffa07a;
+}
+
 a {
     text-decoration: none;
 }
@@ -13,11 +19,153 @@ li {
 
 .container {
     margin: 0 auto;
-    padding: 1rem;
 }
 
 /* Header */
 
+.header {
+    color: #ffa07a;
+    background-color: #008080;
+}
+
+.nav a {
+    color: #ffa07a;
+}
+
+.nav-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding-bottom: .5rem;
+    min-height: 3rem;
+    align-items: flex-end;
+}
+
+.nav-item {
+    padding-right: 5rem;
+}
+
+.header .container {
+    padding-bottom: 0;
+}
+
+@media only screen and (max-width: 590px) {
+    .nav-flex {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .nav-item {
+        padding: 1rem;
+    }
+}
 
 
 /* Banner */
+
+.banner-container {
+    min-height: 31rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.text {
+    min-height: 100px;
+    background-color: rgba(0.5, 0.5, 0.5, .5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .text {
+    min-width: 100%;
+}
+
+.banner h1 {
+    color: #ff7f50;
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* Events */
+
+.events .container {
+    padding: 1rem;
+}
+
+.events-description {
+    padding-left: 1rem;
+    line-height: 2.5;
+}
+
+.events-description .main-line {
+    color: #ffff00;
+    font-size: 1.5rem;
+}
+
+.events-description p {
+    color: #fff;
+}
+
+.gallery-item img {
+    max-width: 24rem;
+    margin: 1rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 3rem;
+}
+
+
+/* Quote */
+
+.quote-container {
+    background-color: #008080;
+    min-width: 100%;
+    min-height: 20rem;
+    padding: 1rem;
+}
+
+.quote-container p {
+    color: #ffff00;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.quote-container .author {
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+
+
+/* Meetup */
+
+.meetup-container {
+    padding: 1rem;
+    padding-top: 4rem;
+}
+
+.meetup-container p {
+    color: #ffff00;
+    font-weight: 400;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+
+.meetup-container img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin: auto;
+}
